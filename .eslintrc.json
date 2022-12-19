@@ -1,0 +1,62 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "next/core-web-vitals",
+        "plugin:storybook/recommended",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+              "singleQuote": true,
+              "tabWidth": 4
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "import/prefer-default-export": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react/jsx-curly-brace-presence": "error",
+        "no-unused-vars": "warn",
+        "no-undef": "off"
+    },
+    "overrides": [
+        {
+            "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+            "rules": {
+                "storybook/hierarchy-separator": "error",
+                "storybook/default-exports": "off"
+            }
+        }
+    ]
+}

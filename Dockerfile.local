@@ -1,0 +1,11 @@
+FROM tracks-fe:221123
+
+RUN mkdir -p /app/frontend
+WORKDIR /app/frontend
+COPY . .
+
+RUN npm install
+
+RUN ls | grep -P "(dev-|storybook-)*.sh" | xargs -d "\n" rm
+
+CMD [ "npm", "run", "dev"]

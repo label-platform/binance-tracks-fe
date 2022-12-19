@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Gilroy;
+  src: url('/fonts/Gilroy/Radomir-Tinkov-Gilroy-Regular.otf');
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url('/fonts/Gilroy/Radomir-Tinkov-Gilroy-Bold.otf');
+}
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url('/fonts/Gilroy/Radomir Tinkov - Gilroy-ExtraBold.otf');
+}
+@font-face {
+  font-family: Syncopate;
+  src: url('/fonts/Syncopate-Regular.ttf');
+}
+@font-face {
+  font-family: Syncopate-Bold;
+  src: url('/fonts/Syncopate-Bold.ttf');
+}
+
+body,
+html,
+#__next {
+  /* width: 100%; */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Gilroy, Gilroy-Bold, Gilroy-ExtraBold, Syncopate ,Syncopate-Bold;
+  font-size: 16px;
+}
+
+* {
+  scroll-margin-top: 3.75rem;
+}
+
+b {
+  font-family: Gilroy-Bold;
+}

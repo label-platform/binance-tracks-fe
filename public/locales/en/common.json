@@ -1,0 +1,8 @@
+{
+    "main": {
+        "playButton": "Go to Playlist {{number}}"
+    },
+    "levelUp":{
+        "levelTo":"Level Up to {{number}}"
+    }
+}

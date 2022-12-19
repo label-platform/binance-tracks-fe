@@ -1,0 +1,8 @@
+{
+    "main": {
+        "playButton": "플리로 가자! {{number}}"
+    },
+        "levelUp":{
+        "LevelTo":"{{number}}으로 레벨업!"
+    }
+}

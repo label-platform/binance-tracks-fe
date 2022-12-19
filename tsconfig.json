@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@layouts/*": [
+        "src/components/common/layouts/*"
+      ],
+      "@icons": [
+        "src/icons/index.tsx"
+      ],
+      "@icons/*": [
+        "src/icons/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@contexts/*": [
+        "src/contexts"
+      ],
+      "@styles/*": [
+        "./styles/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      
+    }
+  },
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", "types/**/*.ts", "storybook.test.ts"],
+  "exclude": ["node_modules"]
+}
