@@ -91,7 +91,7 @@ const ActivationCode: Page = () => {
                     Enter
                 </TRButton>
                 <TRButton sx={{ marginBottom: '20px' }} sizing="xl" variant="outlined">
-                    Get a code from Discord
+                    Enter 12345678 (Just for testing)
                 </TRButton>
                 <Link href="login">
                     <a style={{ color: 'white', textDecoration: 'none' }}>Back to Log in</a>
